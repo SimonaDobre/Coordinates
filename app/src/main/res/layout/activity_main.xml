@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputCoordinatesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Input coordinates, latitude first, like: 45N 24E) "
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/convertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputCoordinatesEditText"
+        android:layout_marginTop="12dp"
+        android:text="convert"
+        app:backgroundTint="#3F51B5" />
+
+    <Button
+        android:id="@+id/exportBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertBtn"
+        android:layout_marginTop="11dp"
+        android:enabled="false"
+        android:text="export &amp; share"
+        app:backgroundTint="#03A9F4" />
+
+    <Button
+        android:id="@+id/toTheMapBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exportBtn"
+        android:layout_marginTop="12dp"
+        android:enabled="false"
+        android:text="pin on the map"
+        app:backgroundTint="#87DF21" />
+
+    <TextView
+        android:id="@+id/showDMStextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toTheMapBtn"
+        android:textSize="18sp" />
+
+</RelativeLayout>
